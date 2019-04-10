@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_curvo"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="#808080"
+            android:textAlignment="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            android:id="@+id/til_Registrar_Nombre"
+            app:errorEnabled="true"
+            android:hint="Nombre">
+
+            <EditText
+                android:id="@+id/txt_Registrar_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="textStart"
+                android:maxLength="40"
+                android:drawablePadding="5dp"
+                android:inputType="textCapWords|textPersonName"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:drawableLeft="@drawable/ic_nombre"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="#808080"
+            android:textAlignment="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            android:id="@+id/til_Registrar_Correo"
+            app:errorEnabled="true"
+            android:hint="Correo">
+
+            <EditText
+                android:id="@+id/txt_Registrar_Correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="textStart"
+                android:maxLength="30"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:drawableLeft="@drawable/ic_correo"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="#808080"
+            android:textAlignment="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            android:id="@+id/til_Registrar_Contraseña"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:hint="Contraseña">
+
+            <EditText
+                android:id="@+id/txt_Registrar_Contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="textStart"
+                android:maxLength="20"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:drawableStart="@drawable/ic_ncontrol"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_Registrar_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Registrar"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:theme="@style/BotonRegistrarse" />
+
+    </LinearLayout>
+
+</FrameLayout>

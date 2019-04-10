@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_curvo"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/civ_Pelicula_perfil"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_nombre"
+            app:civ_border_width="2dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto de Pelicula"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/iv_Pelicula_portada"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_nombre"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portada de Pelicula"
+            android:textAlignment="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:textColorHint="#808080"
+            android:textAlignment="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            android:id="@+id/til_Pelicula_Titulo"
+            app:errorEnabled="true"
+            android:hint="Titulo">
+
+            <EditText
+                android:id="@+id/txt_Pelicula_Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="textStart"
+                android:maxLength="40"
+                android:drawablePadding="5dp"
+                android:inputType="textCapWords|textPersonName"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:drawableLeft="@drawable/ic_nombre"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_Pelicula_Director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:hint="Director"
+            android:textAlignment="center"
+            android:textColorHint="#808080"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/txt_Pelicula_Director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_correo"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:paddingTop="15dp"
+                android:textAlignment="textStart"
+                android:textSize="15sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_Pelicula_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Registrar"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:theme="@style/BotonRegistrarse" />
+
+    </LinearLayout>
+
+</FrameLayout>

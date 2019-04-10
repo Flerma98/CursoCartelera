@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                app:counterMaxLength="35"
+                app:errorEnabled="true"
+                android:id="@+id/til_login_Correo"
+                android:hint="Ingresa tu Correo">
+
+                <EditText
+                    android:id="@+id/txt_login_Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/ic_correo"
+                    android:drawablePadding="5dp"
+                    android:maxLength="35"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:errorEnabled="true"
+                android:id="@+id/til_login_Contraseña"
+                app:passwordToggleEnabled="true"
+                android:hint="Ingresa tu Contraseña">
+
+                <EditText
+                    android:id="@+id/txt_login_Contraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:drawableStart="@drawable/ic_contrasena"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingTop="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_login_Iniciar_Sesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Iniciar Sesion"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/BotonLogin" />
+
+            <View
+                android:layout_marginVertical="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/primaryDarkColor" />
+
+            <Button
+                android:id="@+id/btn_login_Registrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Registrarse"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/BotonLogin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

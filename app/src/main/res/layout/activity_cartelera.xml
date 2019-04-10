@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cartelera">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_peliculas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_Agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:backgroundTint="#DFCECE"
+        app:borderWidth="5dp"
+        app:fabCustomSize="80dp"
+        android:src="@drawable/ic_agregar"
+        app:backgroundTint="@color/colorAccent"
+        app:maxImageSize="50dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_Salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="110dp"
+        android:backgroundTint="#CEDEDF"
+        app:borderWidth="5dp"
+        android:src="@drawable/ic_salir"
+        app:backgroundTint="@color/primaryColor"
+        app:maxImageSize="30dp" />
+
+
+</FrameLayout>
